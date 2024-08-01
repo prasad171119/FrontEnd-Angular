@@ -1,0 +1,17 @@
+<!-- src/app/contact-form/contact-form.component.html -->
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input id="firstName" class="form-control" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" class="form-control" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" class="form-control" formControlName="email">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+  
